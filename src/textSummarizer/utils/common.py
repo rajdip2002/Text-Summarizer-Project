@@ -1,10 +1,10 @@
 import os
-from box.exceptions import BoxValueError
-import yaml
-from textSummarizer.logging import logger
-from ensure import ensure_annotations
-from box import ConfigBox
-from pathlib import Path
+from box.exceptions import BoxValueError  # Catches errors if YAML file is empty or invalid
+import yaml   # Read YAML configuration files
+from textSummarizer.logging import logger  # logs all operations using our custom logger
+from ensure import ensure_annotations # Type checking decorator —> validates argument types at runtime
+from box import ConfigBox  # turns dictionaries into dot accessible objects
+from pathlib import Path  # to handle file paths
 from typing import Any
 
 
